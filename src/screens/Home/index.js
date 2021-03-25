@@ -1,13 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import styles from './style';
+import {Text} from 'react-native';
 
 const HomeScreen = props => {
-  return (
-    <View>
-      <Text>Hi</Text>
-    </View>
-  );
+  return <Text>Hello, I am your cat!</Text>;
 };
 
 export default HomeScreen;
