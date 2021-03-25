@@ -20,21 +20,29 @@ const Post = props => {
         {post.guest} guests · {post.bedroom} bedroom · {post.bath} bath
       </Text>
 
+      {/* Type: Property Type */}
+      <Text style={styles.type} numberOfLines={2}>
+        {post.type}
+      </Text>
+
+      {/* Type description: Title */}
+      <Text style={styles.type} numberOfLines={2}>
+        {post.title}
+      </Text>
+
       {/* Type description */}
-      <Text style={styles.description}>
-        An entire spacious, light-filled, cozy tiny home all to yourselves with
-        separate parking on our beautiful 10 acre property, Dummy text for
-        applications.
+      <Text style={styles.description} numberOfLines={10}>
+        {post.description}
       </Text>
 
       {/* Old and New price */}
       <Text style={styles.prices}>
-        <Text style={styles.oldPrice}>$152</Text>
-        <Text style={styles.newPrice}> $144 </Text>/ night
+        <Text style={styles.oldPrice}>${post.oldPrice}</Text>
+        <Text style={styles.newPrice}> ${post.newPrice} </Text>/ night
       </Text>
 
       {/* Total price */}
-      <Text style={styles.totalPrice}>$176 total</Text>
+      <Text style={styles.totalPrice}>${post.totalPrice} total</Text>
     </View>
   );
 };
