@@ -15,7 +15,7 @@ const HomeScreen = props => {
         <Pressable
           style={styles.button}
           onPress={() => console.warn('Explore btn pressed')}>
-          <Text> Explores nearby stays</Text>
+          <Text style={styles.buttonText}>Explore nearby</Text>
         </Pressable>
       </ImageBackground>
     </View>
