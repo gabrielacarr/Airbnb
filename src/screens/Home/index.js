@@ -1,10 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, ImageBackground} from 'react-native';
+import styles from './styles';
 
 const HomeScreen = props => {
   return (
     <View>
-      <Text>Hello, I am on your screen</Text>
+      {/* Search Bar Component */}
+
+      <ImageBackground
+        source={require('../../../assets/images/airbnb.jpg')}
+        style={styles.image}>
+        {/* Title */}
+
+        {/* Button */}
+      </ImageBackground>
     </View>
   );
 };
