@@ -3,7 +3,7 @@ import {View, Text, Image, Pressable} from 'react-native';
 import styles from './styles.js';
 
 const Post = props => {
-  console.log(props);
+  const post = props.post;
 
   return (
     <View style={styles.container}>
@@ -16,7 +16,9 @@ const Post = props => {
         }}
       />
       {/* Bed and Bedroom */}
-      <Text style={styles.bedrooms}>2 guests · 1 bedroom · 1 bath</Text>
+      <Text style={styles.bedrooms}>
+        2 guests · {post.bedroom} bedroom · {post.bath} bath
+      </Text>
 
       {/* Type description */}
       <Text style={styles.description}>

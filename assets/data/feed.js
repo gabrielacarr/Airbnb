@@ -5,7 +5,7 @@ export default [
       'https://a0.muscache.com/im/pictures/166791ff-bc82-4b88-ba3d-49be1d462dce.jpg?im_w=960',
     type: 'Entire Estate',
     title: 'Experience the Black Aesthetics anyhere',
-    bed: 2,
+    bath: 2,
     bedroom: 3,
     oldPrice: 425,
     newPrice: 370,
