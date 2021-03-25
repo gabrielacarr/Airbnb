@@ -28,11 +28,11 @@ const Post = props => {
       {/* Old and New price */}
       <Text style={styles.prices}>
         <Text style={styles.oldPrice}>$152</Text>
-        <Text style={styles.newPrice}>$144</Text>
+        <Text style={styles.newPrice}> $144 </Text>/ night
       </Text>
 
       {/* Total price */}
-      <Text style={styles.totalPrice}>$176</Text>
+      <Text style={styles.totalPrice}>$176 total</Text>
     </View>
   );
 };
