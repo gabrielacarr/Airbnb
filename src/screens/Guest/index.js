@@ -17,7 +17,7 @@ const GuestScreen = () => {
           style={{flexDirection: 'row', alignItems: 'center', fontSize: 15}}>
           {/* - */}
           <Pressable
-            onPress={() => console.console.warn((data: '-clicked'))}
+            onPress={() => console.warn({data: '-clicked'})}
             style={styles.button}>
             <Text style={{color: 'grey'}}>-</Text>
           </Pressable>
@@ -25,7 +25,7 @@ const GuestScreen = () => {
 
           {/* + */}
           <Pressable
-            onPress={() => console.console.warn((data: '+clicked'))}
+            onPress={() => console.warn({data: '+clicked'})}
             style={styles.button}>
             <Text style={{color: 'grey'}}>+</Text>
           </Pressable>
