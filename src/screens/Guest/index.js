@@ -10,7 +10,7 @@ const GuestScreen = () => {
         {/* Titles */}
         <View>
           <Text style={{fontWeight: 'bold'}}>Adults</Text>
-          <Text>Ages 13 or above</Text>
+          <Text style={{color: 'grey'}}>Ages 13 or above</Text>
         </View>
         {/* Buttons with given value  */}
         <View>
@@ -28,7 +28,6 @@ const GuestScreen = () => {
             style={styles.button}>
             <Text>+</Text>
           </Pressable>
-          <Text>0</Text>
         </View>
       </View>
     </View>
