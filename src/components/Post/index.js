@@ -8,13 +8,8 @@ const Post = props => {
   return (
     <View style={styles.container}>
       {/* Image */}
-      <Image
-        style={styles.image}
-        source={{
-          uri:
-            'https://a0.muscache.com/im/pictures/miso/Hosting-36908284/original/30fb92c2-e4df-479d-912a-c63de33415e0.jpeg?im_w=480',
-        }}
-      />
+      <Image style={styles.image} source={{uri: post.image}} />
+
       {/* Bed and Bedroom */}
       <Text style={styles.bedrooms}>
         {post.guest} guests · {post.bedroom} bedroom · {post.bath} bath
