@@ -1,11 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, TextInput} from 'react-native';
 import styles from './styles.js';
 
 const DestinationSearchScreen = props => {
   return (
     <View>
-      <Text>Can you see me, i am your DestinationSearchScreen component</Text>
+      {/* Input Component */}
+      <TextInput
+        style={styles.textInput}
+        placeholder="Where are you traveling?"
+      />
+      {/* List of Destinations */}
     </View>
   );
 };
