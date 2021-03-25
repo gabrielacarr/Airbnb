@@ -1,11 +1,36 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 import styles from './styles.js';
 
 const GuestScreen = () => {
   return (
     <View>
-      <Text>can you see me, Guest Component is rendered </Text>
+      {/* Row One Adults */}
+      <View style={styles.row}>
+        {/* Titles */}
+        <View>
+          <Text>Adults</Text>
+          <Text>Ages 13 or above</Text>
+        </View>
+        {/* Buttons with given value  */}
+        <View>
+          {/* - */}
+          <Pressable
+            onPress={() => console.console.warn((data: '-clicked'))}
+            style={styles.button}>
+            <Text>-</Text>
+          </Pressable>
+          <Text>0</Text>
+          {/* value */}
+          {/* + */}
+          <Pressable
+            onPress={() => console.console.warn((data: '+clicked'))}
+            style={styles.button}>
+            <Text>+</Text>
+          </Pressable>
+          <Text>0</Text>
+        </View>
+      </View>
     </View>
   );
 };
