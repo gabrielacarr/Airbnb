@@ -17,7 +17,7 @@ const Post = props => {
       />
       {/* Bed and Bedroom */}
       <Text style={styles.bedrooms}>
-        2 guests · {post.bedroom} bedroom · {post.bath} bath
+        {post.guest} guests · {post.bedroom} bedroom · {post.bath} bath
       </Text>
 
       {/* Type description */}
