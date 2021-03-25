@@ -1,12 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, FlatList} from 'react-native';
+import Post from '../../components/Post';
 
-const SearchResultScreen = props => {
+const SearchResultsScreen = props => {
+  const {posts} = props;
+
   return (
     <View>
-      <Text>Can you see me, I am your search result screen</Text>
+      <FlatList data={posts} renderItem={({item}) => <Post post={item} />} />
     </View>
   );
 };
 
-export default SearchResultScreen;
+export default SearchResultsScreen;
