@@ -9,7 +9,7 @@ const GuestScreen = () => {
       <View style={styles.row}>
         {/* Titles */}
         <View>
-          <Text>Adults</Text>
+          <Text style={{fontWeight: 'bold'}}>Adults</Text>
           <Text>Ages 13 or above</Text>
         </View>
         {/* Buttons with given value  */}
@@ -21,7 +21,7 @@ const GuestScreen = () => {
             <Text>-</Text>
           </Pressable>
           <Text>0</Text>
-          {/* value */}
+
           {/* + */}
           <Pressable
             onPress={() => console.console.warn((data: '+clicked'))}
