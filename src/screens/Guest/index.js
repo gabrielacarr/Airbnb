@@ -13,20 +13,21 @@ const GuestScreen = () => {
           <Text style={{color: 'grey'}}>Ages 13 or above</Text>
         </View>
         {/* Buttons with given value  */}
-        <View>
+        <View
+          style={{flexDirection: 'row', alignItems: 'center', fontSize: 15}}>
           {/* - */}
           <Pressable
             onPress={() => console.console.warn((data: '-clicked'))}
             style={styles.button}>
-            <Text>-</Text>
+            <Text style={{color: 'grey'}}>-</Text>
           </Pressable>
-          <Text>0</Text>
+          <Text style={{marginHorizontal: 20}}>0</Text>
 
           {/* + */}
           <Pressable
             onPress={() => console.console.warn((data: '+clicked'))}
             style={styles.button}>
-            <Text>+</Text>
+            <Text style={{color: 'grey'}}>+</Text>
           </Pressable>
         </View>
       </View>
