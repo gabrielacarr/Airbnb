@@ -18,7 +18,7 @@ const GuestScreen = () => {
           style={{flexDirection: 'row', alignItems: 'center', fontSize: 15}}>
           {/* - */}
           <Pressable
-            onPress={() => setAdults(adults - 1)}
+            onPress={() => setAdults(Math.max(0, adults - 1))}
             style={styles.button}>
             <Text style={{color: 'grey'}}>-</Text>
           </Pressable>
