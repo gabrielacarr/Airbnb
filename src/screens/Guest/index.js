@@ -26,7 +26,7 @@ const GuestScreen = () => {
 
           {/* + */}
           <Pressable
-            onPress={() => console.warn({data: '+clicked'})}
+            onPress={() => setAdults(adults + 1)}
             style={styles.button}>
             <Text style={{color: 'grey'}}>+</Text>
           </Pressable>
