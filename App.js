@@ -22,11 +22,11 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        {/* <HomeScreen /> */}
+        <HomeScreen />
         {/* <Post post={post1} /> */}
         {/* <SearchResultsScreen /> */}
         {/* <DestinationSearchScreen /> */}
-        <GuestScreen />
+        {/* <GuestScreen /> */}
       </SafeAreaView>
     </>
   );
